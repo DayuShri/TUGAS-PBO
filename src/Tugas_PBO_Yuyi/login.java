@@ -1,47 +1,42 @@
 package Tugas_PBO_Yuyi;
-
 public class Login {
-    private String user;
-    private String pass_user;
-    private String admin;
-    private String pass_admin;
 
-    public Login() {
-        this.user = "user";
-        this.pass_user = "pass_user";
-        this.admin = "admin";
-        this.pass_admin = "pass_admin";
+    private String username_user,password_user,
+            username_admin,password_admin;
+
+    public Login(){
+        username_user = "akunuser";
+        password_user = "passuser";
+
+        username_admin = "akunadmin";
+        password_admin = "passadmin";
     }
 
-    public String getUser() {
-        return user;
+    //setter
+    public void setUsername_user(String username_user){
+        this.username_user = username_user;
+    }
+    public void setPassword_user(String password_user){
+        this.password_user = password_user;
+    }
+    public void setUsername_admin(String username_admin){
+        this.username_admin = username_admin;
+    }
+    public void setPassword_admin(String password_admin){
+        this.password_admin = password_admin;
     }
 
-    public void setUser(String user) {
-        this.user = user;
+    //getter
+    public String getUsername_user() {
+        return username_user;
     }
-
-    public String getPass_user() {
-        return pass_user;
+    public String getPassword_user() {
+        return password_user;
     }
-
-    public void setPass_user(String pass_user) {
-        this.pass_user = pass_user;
+    public String getUsername_admin() {
+        return username_admin;
     }
-
-    public String getAdmin() {
-        return admin;
-    }
-
-    public void setAdmin(String admin) {
-        this.admin = admin;
-    }
-
-    public String getPass_admin() {
-        return pass_admin;
-    }
-
-    public void setPass_admin(String pass_admin) {
-        this.pass_admin = pass_admin;
+    public String getPassword_admin() {
+        return password_admin;
     }
 }
