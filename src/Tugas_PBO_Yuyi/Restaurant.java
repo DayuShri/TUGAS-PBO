@@ -7,11 +7,13 @@ public class Restaurant {
     private int id;
     private String nama;
     private String alamat;
+    private ArrayList<Menu> menus;
 
     public Restaurant(int id, String nama, String alamat) {
         this.id = id;
         this.nama = nama;
         this.alamat = alamat;
+        this.menus = new ArrayList<>();
     }
 
     public int getId() {
@@ -19,6 +21,13 @@ public class Restaurant {
         return id;
     }
 
+    public ArrayList<Menu> getMenus() {
+        return menus;
+    }
+
+    public void setMenus (Menu menu) {
+        this.menus.add(menu);
+    }
     public void setId(int id) {
         this.id = id;
     }
