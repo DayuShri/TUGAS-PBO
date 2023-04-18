@@ -1,12 +1,13 @@
 package Tugas_PBO_Yuyi;
+
 public class Login {
 
     private String username_user,password_user,
             username_admin,password_admin;
 
     public Login(){
-        username_user = "akunuser";
-        password_user = "passuser";
+        username_user = "useryuyi";
+        password_user = "passyuyi";
 
         username_admin = "akunadmin";
         password_admin = "passadmin";
